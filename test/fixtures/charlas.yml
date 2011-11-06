@@ -5,11 +5,11 @@ one:
   descripcion: MyText
   hora: 2011-11-06 14:28:36
   sala: MyString
-  ordador_id: 1
+  orador_id: 1
 
 two:
   titulo: MyString
   descripcion: MyText
   hora: 2011-11-06 14:28:36
   sala: MyString
-  ordador_id: 1
+  orador_id: 1
