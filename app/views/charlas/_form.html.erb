@@ -29,7 +29,7 @@
   </div>
   <div class="field">
     <%= f.label :orador_id %><br />
-    <%= f.number_field :orador_id %>
+    <%= f.collection_select :orador_id, Orador.all, :id, :nombre, include_blank: true %>
   </div>
   <div class="actions">
     <%= f.submit %>
