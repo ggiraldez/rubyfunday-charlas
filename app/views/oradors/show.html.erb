@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @orador.nombre %>
+</p>
+
+<p>
+  <b>Twitter:</b>
+  <%= @orador.twitter %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @orador.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_orador_path(@orador) %> |
+<%= link_to 'Back', oradors_path %>

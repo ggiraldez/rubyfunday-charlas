@@ -1,4 +1,6 @@
 Charlas::Application.routes.draw do
+  resources :oradors
+
   resources :charlas
 
   # The priority is based upon order of creation:

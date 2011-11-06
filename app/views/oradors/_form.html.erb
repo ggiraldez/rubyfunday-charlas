@@ -1,0 +1,29 @@
+<%= form_for(@orador) do |f| %>
+  <% if @orador.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@orador.errors.count, "error") %> prohibited this orador from being saved:</h2>
+
+      <ul>
+      <% @orador.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :twitter %><br />
+    <%= f.text_field :twitter %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

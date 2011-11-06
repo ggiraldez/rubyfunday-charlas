@@ -1,0 +1,27 @@
+<h1>Listing oradors</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Twitter</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @oradors.each do |orador| %>
+  <tr>
+    <td><%= orador.nombre %></td>
+    <td><%= orador.twitter %></td>
+    <td><%= orador.email %></td>
+    <td><%= link_to 'Show', orador %></td>
+    <td><%= link_to 'Edit', edit_orador_path(orador) %></td>
+    <td><%= link_to 'Destroy', orador, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Orador', new_orador_path %>
