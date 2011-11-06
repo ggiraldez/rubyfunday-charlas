@@ -5,7 +5,7 @@ class CreateCharlas < ActiveRecord::Migration
       t.text :descripcion
       t.datetime :hora
       t.string :sala
-      t.integer :ordador_id
+      t.integer :orador_id
 
       t.timestamps
     end
