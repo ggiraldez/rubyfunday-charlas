@@ -1,0 +1,31 @@
+<h1>Listing charlas</h1>
+
+<table>
+  <tr>
+    <th>Titulo</th>
+    <th>Descripcion</th>
+    <th>Hora</th>
+    <th>Sala</th>
+    <th>Ordador</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @charlas.each do |charla| %>
+  <tr>
+    <td><%= charla.titulo %></td>
+    <td><%= charla.descripcion %></td>
+    <td><%= charla.hora %></td>
+    <td><%= charla.sala %></td>
+    <td><%= charla.ordador_id %></td>
+    <td><%= link_to 'Show', charla %></td>
+    <td><%= link_to 'Edit', edit_charla_path(charla) %></td>
+    <td><%= link_to 'Destroy', charla, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Charla', new_charla_path %>

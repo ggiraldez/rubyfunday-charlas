@@ -1,0 +1,37 @@
+<%= form_for(@charla) do |f| %>
+  <% if @charla.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@charla.errors.count, "error") %> prohibited this charla from being saved:</h2>
+
+      <ul>
+      <% @charla.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :titulo %><br />
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcion %><br />
+    <%= f.text_area :descripcion %>
+  </div>
+  <div class="field">
+    <%= f.label :hora %><br />
+    <%= f.datetime_select :hora %>
+  </div>
+  <div class="field">
+    <%= f.label :sala %><br />
+    <%= f.text_field :sala %>
+  </div>
+  <div class="field">
+    <%= f.label :ordador_id %><br />
+    <%= f.number_field :ordador_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

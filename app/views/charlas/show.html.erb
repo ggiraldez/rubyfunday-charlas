@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Titulo:</b>
+  <%= @charla.titulo %>
+</p>
+
+<p>
+  <b>Descripcion:</b>
+  <%= @charla.descripcion %>
+</p>
+
+<p>
+  <b>Hora:</b>
+  <%= @charla.hora %>
+</p>
+
+<p>
+  <b>Sala:</b>
+  <%= @charla.sala %>
+</p>
+
+<p>
+  <b>Ordador:</b>
+  <%= @charla.ordador_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_charla_path(@charla) %> |
+<%= link_to 'Back', charlas_path %>
