@@ -1,6 +1,6 @@
-class CreateOradors < ActiveRecord::Migration
+class CreateOradores < ActiveRecord::Migration
   def change
-    create_table :oradors do |t|
+    create_table :oradores do |t|
       t.string :nombre
       t.string :twitter
       t.string :email

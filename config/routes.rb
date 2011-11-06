@@ -1,5 +1,5 @@
 Charlas::Application.routes.draw do
-  resources :oradors
+  resources :oradores
 
   resources :charlas
 

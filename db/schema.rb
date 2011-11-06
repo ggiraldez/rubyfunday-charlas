@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(:version => 20111106181829) do
     t.datetime "updated_at"
   end
 
-  create_table "oradors", :force => true do |t|
+  create_table "oradores", :force => true do |t|
     t.string   "nombre"
     t.string   "twitter"
     t.string   "email"

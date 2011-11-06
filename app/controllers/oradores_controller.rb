@@ -1,17 +1,17 @@
-class OradorsController < ApplicationController
-  # GET /oradors
-  # GET /oradors.json
+class OradoresController < ApplicationController
+  # GET /oradores
+  # GET /oradores.json
   def index
-    @oradors = Orador.all
+    @oradores = Orador.all
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @oradors }
+      format.json { render json: @oradores }
     end
   end
 
-  # GET /oradors/1
-  # GET /oradors/1.json
+  # GET /oradores/1
+  # GET /oradores/1.json
   def show
     @orador = Orador.find(params[:id])
 
@@ -21,8 +21,8 @@ class OradorsController < ApplicationController
     end
   end
 
-  # GET /oradors/new
-  # GET /oradors/new.json
+  # GET /oradores/new
+  # GET /oradores/new.json
   def new
     @orador = Orador.new
 
@@ -32,13 +32,13 @@ class OradorsController < ApplicationController
     end
   end
 
-  # GET /oradors/1/edit
+  # GET /oradores/1/edit
   def edit
     @orador = Orador.find(params[:id])
   end
 
-  # POST /oradors
-  # POST /oradors.json
+  # POST /oradores
+  # POST /oradores.json
   def create
     @orador = Orador.new(params[:orador])
 
@@ -53,8 +53,8 @@ class OradorsController < ApplicationController
     end
   end
 
-  # PUT /oradors/1
-  # PUT /oradors/1.json
+  # PUT /oradores/1
+  # PUT /oradores/1.json
   def update
     @orador = Orador.find(params[:id])
 
@@ -69,14 +69,14 @@ class OradorsController < ApplicationController
     end
   end
 
-  # DELETE /oradors/1
-  # DELETE /oradors/1.json
+  # DELETE /oradores/1
+  # DELETE /oradores/1.json
   def destroy
     @orador = Orador.find(params[:id])
     @orador.destroy
 
     respond_to do |format|
-      format.html { redirect_to oradors_url }
+      format.html { redirect_to oradores_url }
       format.json { head :ok }
     end
   end
