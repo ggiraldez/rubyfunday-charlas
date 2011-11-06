@@ -35,3 +35,8 @@ group :test do
   gem 'turn', :require => false
   gem 'minitest'
 end
+
+group :production do
+  gem 'pg'
+end
+

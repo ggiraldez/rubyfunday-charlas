@@ -18,7 +18,7 @@
     <td><%= charla.descripcion %></td>
     <td><%= charla.hora %></td>
     <td><%= charla.sala %></td>
-    <td><%= charla.orador_id %></td>
+    <td><%= charla.orador.try(:nombre) %></td>
     <td><%= link_to 'Show', charla %></td>
     <td><%= link_to 'Edit', edit_charla_path(charla) %></td>
     <td><%= link_to 'Destroy', charla, confirm: 'Are you sure?', method: :delete %></td>
