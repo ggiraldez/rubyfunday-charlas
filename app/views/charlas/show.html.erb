@@ -22,7 +22,7 @@
 
 <p>
   <b>Orador:</b>
-  <%= @charla.orador_id %>
+  <%= @charla.orador.try(:nombre) %>
 </p>
 
 
